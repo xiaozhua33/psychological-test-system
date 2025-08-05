@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700;800&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --brand-primary: #9347f7;
+  --brand-secondary: #ff3385;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'M PLUS 1p', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Button animations */
+.btn-primary {
+  @apply bg-gradient-to-r from-brand-600 to-accent-500 text-white font-medium py-3 px-6 rounded-xl transition-all duration-200 hover:shadow-lg hover:scale-105 active:scale-95;
+}
+
+.btn-secondary {
+  @apply bg-white text-brand-700 border-2 border-brand-200 font-medium py-3 px-6 rounded-xl transition-all duration-200 hover:bg-brand-50 hover:border-brand-300 hover:shadow-md;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-all duration-200 hover:shadow-md;
+}
+
+.card-interactive {
+  @apply card hover:scale-105 cursor-pointer;
+}
+
+/* Gradient backgrounds */
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-brand-600 to-accent-500 bg-clip-text text-transparent;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .container {
+    @apply px-4;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    @apply py-4 px-8 text-lg;
+  }
+  
+  h1 {
+    @apply text-2xl;
+  }
+  
+  h2 {
+    @apply text-xl;
+  }
+}

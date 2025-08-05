@@ -1,0 +1,17 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/auth/callback/page": "/auth/callback",
+  "/auth/login/page": "/auth/login",
+  "/auth/signup/page": "/auth/signup",
+  "/contact/page": "/contact",
+  "/disclaimer/page": "/disclaimer",
+  "/legal/page": "/legal",
+  "/mypage/page": "/mypage",
+  "/page": "/",
+  "/payment/success/page": "/payment/success",
+  "/pricing/page": "/pricing",
+  "/privacy/page": "/privacy",
+  "/result/[id]/page": "/result/[id]",
+  "/terms/page": "/terms"
+}
